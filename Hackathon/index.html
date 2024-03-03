@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body style="background-image: url(bg4.jpg);">
+
+    <!-- <center style="margin-top:250px ; "> -->
+    <div style="display: inline-block   ; margin-right: 15px;">
+        <img src="gettyimages-1300845620-612x612.jpg" alt="" height="200px" width="200px">
+        <div style="margin-top: 5px; margin-left: 30px;"> <button class="open-button" style="font-size: 20px;"
+                onclick="openForm()">Admin</button>
+        </div>
+    </div>
+
+    <div style="display: inline-block;">
+        <img src="images (1).png" alt="" height="200px" width="200px">
+        <div style="margin-top: 5px;margin-left: 25px; ">
+            <button class="open-button" onclick="openForm1()" style="font-size: 20px;">
+                User</button>
+        </div>
+
+        <!-- </center> -->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+
+                <button type="submit" class="btn" onclick="welcome()">Sign up</button>
+                <button type="button" class="btn" onclick="welcome1()">Sign in</button>
+            </form>
+
+        </div>
+        <div class="form-popup" id="myForm1">
+            <form class="form-container">
+
+                <button type="submit" class="btn" onclick="welcome2()">Sign up</button>
+                <button type="button" class="btn" onclick="welcome3()">Sign in</button>
+            </form>
+
+        </div>
+        <script>function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            function openForm1() {
+                document.getElementById("myForm1").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+            function welcome() {
+                window.open("C.html")
+            }
+            function welcome1() {
+                window.open("D.html")
+            }
+            function welcome2() {
+                window.open("F.html")
+            }
+            function welcome3() {
+                window.open("H.html")
+            }
+        </script>
+</body>
+
+</htm
